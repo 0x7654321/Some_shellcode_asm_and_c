@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <windows.h>
 
 unsigned char buffer[] = "\x66\xba\x0e\x00\x00\x00\x66\xb9\x1c\x00\x00\x00\x66\xbb\x01"
@@ -7,6 +6,7 @@ unsigned char buffer[] = "\x66\xba\x0e\x00\x00\x00\x66\xb9\x1c\x00\x00\x00\x66\x
                          "\x6c\x6c\x6f\x20\x77\x6f\x72\x6c\x64\x21\x21\x0a";
 
 int main(int argc, char *argv[]) {
+    printf("Injecting shellcode in the stack.");
     PVOID shellcode_exec;
     DWORD threadID;
     HANDLE hThread;
