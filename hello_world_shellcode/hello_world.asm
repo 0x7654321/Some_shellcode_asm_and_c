@@ -6,6 +6,11 @@ global _start
 
 _start:
 
+    xor edx, edx
+    xor ecx, ecx
+    xor ebx, ebx
+    xor eax, eax
+    
     mov edx, 14
     mov ecx, msg
     mov ebx, 1
